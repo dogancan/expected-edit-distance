@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-cd test
-
 # Generate and compile edit transducer
 ../vocab2edit.py < vocab | \
   fstcompile --arc_type=log --isymbols=syms --osymbols=syms > edit.fst
