@@ -10,5 +10,5 @@ fstcompile --arc_type=log --acceptor --isymbols=syms x.txt | \
 fstcompile --arc_type=log --acceptor --isymbols=syms y.txt | \
   fstpush --push_weights --remove_total_weight > y.fst
 
-# compute distance
+# Compute distance
 ../dist.sh edit.fst x.fst y.fst
