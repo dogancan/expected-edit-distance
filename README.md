@@ -5,7 +5,7 @@ We use the following algorithm for computing the expected edit distance between
 two acyclic probabilistic finite state automata `X` and `Y` over the log
 semiring:
 
-    D(X,Y) = ShortestDistLog(-DetTrop(-RmEpsTrop(Sync(DetLog(X o T o Y)))))
+    D(X,Y) = ShortestDistLog(-DetTrop(RmEpsTrop(Sync(-DetLog(X o T o Y)))))
 
 where `T` is a weighted transducer over the log semiring representing the
 edit cost function.
